@@ -1,2 +1,2 @@
 # NG-Garage
-SoftUni React course final project
+My React project
