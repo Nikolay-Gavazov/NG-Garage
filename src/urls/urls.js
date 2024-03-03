@@ -1,0 +1,1 @@
+export const userUrl = 'https://photoserver-z1dl.onrender.com/api';
