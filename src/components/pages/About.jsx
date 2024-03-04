@@ -32,9 +32,7 @@ const About = () => {
           Your Auto Care
         </h1>
         <p className="mb-4">
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-          lorem sit clita duo justo magna dolore erat amet
+        Welcome to NG Garage, your ultimate destination for top-notch automotive care. At NG Garage, we pride ourselves on our passion for precision and dedication to excellence. With a team of skilled technicians and state-of-the-art equipment, we're committed to providing unparalleled service for your vehicle. Trust NG Garage for all your automotive needs and experience the difference firsthand.
         </p>
         <div className="row g-4 mb-3 pb-3">
           <div className="col-12 wow fadeIn" data-wow-delay="0.1s">
@@ -47,7 +45,7 @@ const About = () => {
               </div>
               <div className="ps-3">
                 <h6>Professional &amp; Expert</h6>
-                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                <span>At NG Garage, our team embodies professionalism and expertise, ensuring your vehicle receives the highest quality care and attention it deserves.</span>
               </div>
             </div>
           </div>
@@ -61,7 +59,7 @@ const About = () => {
               </div>
               <div className="ps-3">
                 <h6>Quality Servicing Center</h6>
-                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                <span>At NG Garage, we stand as a premier Quality Servicing Center, dedicated to delivering excellence in every aspect of vehicle maintenance and care.</span>
               </div>
             </div>
           </div>
@@ -75,15 +73,11 @@ const About = () => {
               </div>
               <div className="ps-3">
                 <h6>Awards Winning Workers</h6>
-                <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                <span>At NG Garage, our award-winning workers are dedicated professionals, committed to delivering exceptional service and exceeding expectations.</span>
               </div>
             </div>
           </div>
         </div>
-        <a href="" className="btn btn-primary py-3 px-5">
-          Read More
-          <i className="fa fa-arrow-right ms-3" />
-        </a>
       </div>
     </div>
   </div>
