@@ -44,13 +44,6 @@ const Carousel = () =>{
                 <h1 className="display-3 text-white mb-4 pb-3 animated slideInDown">
                   Qualified Car Wash Service Center
                 </h1>
-                <a
-                  href=""
-                  className="btn btn-primary py-3 px-5 animated slideInDown"
-                >
-                  Learn More
-                  <i className="fa fa-arrow-right ms-3" />
-                </a>
               </div>
               <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
                 <img className="img-fluid" src="/img/carousel-2.png" alt="" />
