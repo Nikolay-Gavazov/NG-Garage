@@ -1,4 +1,31 @@
+import { useEffect, useState } from "react";
+
 const Fact = () => {
+  const [experiance, setExperiance] = useState(0);
+  const [satisfiedCustomers, setSatisfiedCustomers] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSatisfiedCustomers(prevCustomers => {
+        const newCustomers = prevCustomers + 10;
+        return newCustomers <= 2894 ? newCustomers : prevCustomers;
+      });
+    }, 5);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+   const interval = setInterval(() => {
+    setExperiance(state => {
+      const experiance = state + 1;
+      return experiance <= 16 ? experiance : state;
+    });
+   },100) 
+
+   return () => clearInterval(interval);
+  },[]); 
+
     return(
         <div className="container-fluid fact bg-dark my-5 py-5">
   <div className="container">
@@ -9,7 +36,7 @@ const Fact = () => {
       >
         <i className="fa fa-check fa-2x text-white mb-3" />
         <h2 className="text-white mb-2" data-toggle="counter-up">
-          1234
+          {experiance}
         </h2>
         <p className="text-white mb-0">Years Experience</p>
       </div>
@@ -19,7 +46,7 @@ const Fact = () => {
       >
         <i className="fa fa-users fa-2x text-white mb-3" />
         <h2 className="text-white mb-2" data-toggle="counter-up">
-          1234
+          {satisfiedCustomers}
         </h2>
         <p className="text-white mb-0">Satisfied Clients</p>
       </div>
@@ -29,7 +56,7 @@ const Fact = () => {
       >
         <i className="fa fa-car fa-2x text-white mb-3" />
         <h2 className="text-white mb-2" data-toggle="counter-up">
-          1234
+          {satisfiedCustomers}
         </h2>
         <p className="text-white mb-0">Compleate Projects</p>
       </div>
