@@ -1,4 +1,14 @@
+import { useContext, useState } from "react";
+import AuthContext from "../../context/authContext";
+
 const Contacts = () => {
+  const {isAuthenticated} = useContext(AuthContext);
+  const [isSend, setIsSend] = useState(false);
+
+  function onSubmit(e) {
+    e.preventDefault();
+    setIsSend(true);
+  }
   return (
     <div className="container-xxl py-5">
       <div className="container">
@@ -6,7 +16,7 @@ const Contacts = () => {
           <h6 className="text-primary text-uppercase">// Contact Us //</h6>
           <h1 className="mb-5">Contact For Any Query</h1>
         </div>
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
           <div className="col-12">
             <div className="row gy-4">
               <div className="col-md-4">
@@ -38,18 +48,11 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.1615352787768!2d23.377164180096038!3d42.63940002112274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa86c084796deb%3A0x11ee401206e440ee!2zZy5rLiBNbGFkb3N0IDNNbGFkb3N0LCDQti7Qui4g0JzQu9Cw0LTQvtGB0YIgMyAzMjksIDE3MTIgU29maWE!5e0!3m2!1sen!2sbg!4v1708505094888!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div className="col-md-6">
+          {isAuthenticated && (
+            <div className="col-md-7">
             <div className="wow fadeInUp" data-wow-delay="0.2s">
-              <p className="mb-4">
-                The contact form is currently inactive. Get a functional and working
-                contact form with Ajax &amp; PHP in a few minutes. Just copy and
-                paste the files, add a little code and you're done.{" "}
-                <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-              </p>
-              <form>
+              <h3 className="mb-4 text-center">Contact us</h3>
+              <form onSubmit={onSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
@@ -97,14 +100,30 @@ const Contacts = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button className="btn btn-primary w-100 py-3" type="submit">
+                    <button
+                      className="btn btn-primary w-100 py-3"
+                      type="submit"
+                      disabled={isSend}>
                       Send Message
                     </button>
+                    <div className="col-12 col-sm-12">
+                      {isSend && (
+                        <p
+                          style={{
+                            margin: "2em auto",
+                            textAlign: "center",
+                          }}
+                        >
+                          Your message is sent! We will answer soon as possible!
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+          )}
         </div>
       </div>
     </div>
