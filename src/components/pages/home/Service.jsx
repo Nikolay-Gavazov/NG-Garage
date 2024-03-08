@@ -66,9 +66,7 @@ const Service = () => {
                     15 Years Of Experience In Auto Servicing
                   </h3>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                    sed stet lorem sit clita duo justo magna dolore erat amet
+                  At NG Garage, our diagnostic tests are conducted with precision and expertise, ensuring accurate assessments to keep your vehicle running smoothly.
                   </p>
                   <p>
                     <i className="fa fa-check text-success me-3" />
@@ -82,10 +80,10 @@ const Service = () => {
                     <i className="fa fa-check text-success me-3" />
                     Modern Equipment
                   </p>
-                  <a href="" className="btn btn-primary py-3 px-5 mt-3">
-                    Read More
-                    <i className="fa fa-arrow-right ms-3" />
-                  </a>
+                  <p>
+                    <i className="fa fa-check text-success me-3" />
+                    Service Guarantee
+                  </p>
                 </div>
               </div>
             </div>
@@ -106,9 +104,7 @@ const Service = () => {
                     15 Years Of Experience In Auto Servicing
                   </h3>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                    sed stet lorem sit clita duo justo magna dolore erat amet
+                  At NG Garage, our engine servicing is unparalleled, performed by skilled technicians who prioritize efficiency and reliability to keep your vehicle performing at its best.
                   </p>
                   <p>
                     <i className="fa fa-check text-success me-3" />
@@ -122,10 +118,10 @@ const Service = () => {
                     <i className="fa fa-check text-success me-3" />
                     Modern Equipment
                   </p>
-                  <a href="" className="btn btn-primary py-3 px-5 mt-3">
-                    Read More
-                    <i className="fa fa-arrow-right ms-3" />
-                  </a>
+                  <p>
+                    <i className="fa fa-check text-success me-3" />
+                    Service Guarantee
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,9 +142,7 @@ const Service = () => {
                     15 Years Of Experience In Auto Servicing
                   </h3>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                    sed stet lorem sit clita duo justo magna dolore erat amet
+                  At NG Garage, we specialize in tire replacement, offering expert service and premium tire options to ensure your vehicle's safety and performance on the road.
                   </p>
                   <p>
                     <i className="fa fa-check text-success me-3" />
@@ -162,10 +156,10 @@ const Service = () => {
                     <i className="fa fa-check text-success me-3" />
                     Modern Equipment
                   </p>
-                  <a href="" className="btn btn-primary py-3 px-5 mt-3">
-                    Read More
-                    <i className="fa fa-arrow-right ms-3" />
-                  </a>
+                  <p>
+                    <i className="fa fa-check text-success me-3" />
+                    Service Guarantee
+                  </p>
                 </div>
               </div>
             </div>
@@ -186,9 +180,7 @@ const Service = () => {
                     15 Years Of Experience In Auto Servicing
                   </h3>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                    Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                    sed stet lorem sit clita duo justo magna dolore erat amet
+                  At NG Garage, our oil changing service is executed with precision and care, using high-quality products and expert techniques to keep your engine running smoothly and efficiently."
                   </p>
                   <p>
                     <i className="fa fa-check text-success me-3" />
@@ -202,10 +194,10 @@ const Service = () => {
                     <i className="fa fa-check text-success me-3" />
                     Modern Equipment
                   </p>
-                  <a href="" className="btn btn-primary py-3 px-5 mt-3">
-                    Read More
-                    <i className="fa fa-arrow-right ms-3" />
-                  </a>
+                  <p>
+                    <i className="fa fa-check text-success me-3" />
+                    Service Guarantee
+                  </p>
                 </div>
               </div>
             </div>
