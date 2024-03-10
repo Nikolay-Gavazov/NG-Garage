@@ -21,16 +21,16 @@ const Footer = () => {
               info@example.com
             </p>
             <div className="d-flex pt-2">
-              <a className="btn btn-outline-light btn-social" href="https://twitter.com/">
+              <a className="btn btn-outline-light btn-social" target="blank" href="https://twitter.com/">
                 <i className="fab fa-twitter" />
               </a>
-              <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/">
+              <a className="btn btn-outline-light btn-social" target="blank" href="https://www.facebook.com/">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a className="btn btn-outline-light btn-social" href="https://youtube.com/">
+              <a className="btn btn-outline-light btn-social" target="blank" href="https://youtube.com/">
                 <i className="fab fa-youtube" />
               </a>
-              <a className="btn btn-outline-light btn-social" href="https://linkedin.com/">
+              <a className="btn btn-outline-light btn-social" target="blank" href="https://linkedin.com/">
                 <i className="fab fa-linkedin-in" />
               </a>
             </div>
@@ -44,20 +44,20 @@ const Footer = () => {
           </div>
           <div className="col-lg-3 col-md-6 footer-div">
             <h4 className="text-light mb-4">Services</h4>
-            <a className="btn btn-link" href="">
+            <a className="btn btn-link" href="/booking">
               Diagnostic Test
             </a>
-            <a className="btn btn-link" href="">
+            <a className="btn btn-link" href="/booking">
               Engine Servicing
             </a>
-            <a className="btn btn-link" href="">
+            <a className="btn btn-link" href="/booking">
               Tires Replacement
             </a>
-            <a className="btn btn-link" href="">
+            <a className="btn btn-link" href="/booking">
               Oil Changing
             </a>
-            <a className="btn btn-link" href="">
-              Vacuam Cleaning
+            <a className="btn btn-link" href="/booking">
+              Car Washing
             </a>
           </div>
         </div>
