@@ -6,6 +6,15 @@ function buildOptions(data){
         options.headers = {"Content-Type": "application/json"};
     }
 
+    const token = localStorage.getItem("accessToken");
+
+    if(token){
+        options.headers = {
+            ...options.headers,
+            "X-Authorization": token,
+        };
+    };
+
     return options;
 }
 
@@ -14,7 +23,16 @@ const request = async(method, url, data) =>{
         ...buildOptions(data),
         method
     });
+    if(responce.status ===204){
+        return {};
+    }
+
     const result = await responce.json();
+
+    if(!responce.ok){
+        throw result;
+    }
+    
     return result;
 };
 
