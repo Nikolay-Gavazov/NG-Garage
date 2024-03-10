@@ -18,16 +18,16 @@ const Topbar = () =>{
         <small>+359 888 888 888</small>
       </div>
       <div className="h-100 d-inline-flex align-items-center">
-        <a target="_blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/">
+        <a target="blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/">
           <i className="fab fa-facebook-f" />
         </a>
-        <a target="_blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://twitter.com/">
+        <a target="blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://twitter.com/">
           <i className="fab fa-twitter" />
         </a>
-        <a target="_blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://youtube.com/">
+        <a target="blank" className="btn btn-sm-square bg-white text-primary me-1" href="https://linkedin.com/">
           <i className="fab fa-linkedin-in" />
         </a>
-        <a target="_blank" className="btn btn-sm-square bg-white text-primary me-0" href="https://linkedin.com/">
+        <a target="blank" className="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/">
           <i className="fab fa-instagram" />
         </a>
       </div>
