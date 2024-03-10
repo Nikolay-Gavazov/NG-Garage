@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import usePersistedState from "../hooks/usePersistedState";
-import { login } from "../services/userService";
+import { login, register } from "../services/userService";
 
 const AuthContext = createContext();
 
@@ -15,7 +15,6 @@ export const AuthProvider = ({children}) =>{
 
     const loginSubmitHandler = async (data) => {
         setIsloading(true);
-
         try {
             const result = await login(data.email, data.password);
             setAuth(result);
@@ -45,7 +44,7 @@ export const AuthProvider = ({children}) =>{
         }
     };
 
-    const logoutHandler = () => {
+    const logoutHandler = async () => {
         setIsloading(true);
         setAuth({});
         localStorage.removeItem("accessToken");
